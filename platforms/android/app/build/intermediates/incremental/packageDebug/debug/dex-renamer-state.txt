@@ -1,4 +1,0 @@
-#Sat Sep 29 07:51:53 IST 2018
-base.0=/Users/rohitshukla/Desktop/new/flipprr/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
-path.0=classes.dex
-renamed.0=classes.dex

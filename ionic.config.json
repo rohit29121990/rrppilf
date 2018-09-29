@@ -1,7 +1,0 @@
-{
-  "name": "flipprr",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "ionic-angular"
-}
