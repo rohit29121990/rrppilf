@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="cp();">
+        <img alt="logo" height="25" width="25" src="assets/icon/cpicon.png">
+      </button>
+      <button ion-button icon-only (click)="logout();">
+        <ion-icon name="power"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content no-scroll overflow-scroll="false" has-bouncing="false" scroll="false">
+
+  <ion-scroll has-bouncing="false" style="width:100%;height:100%;" scrollY="true">
+
+
+  <ion-item id="login">
+    <ion-label floating>login id</ion-label>
+    <ion-input name='userg' [(ngModel)]="LoginId" type="text" disabled></ion-input>
+  </ion-item>
+
+  <ion-item id="mobi">
+    <ion-label floating>mobile number</ion-label>
+    <ion-input name='monog' [(ngModel)]="MobileNo" type="number" disabled></ion-input>
+  </ion-item>
+
+  <form [formGroup]="profileForm">
+    <ion-item id="firstname">
+      <ion-label floating >first name</ion-label>
+      <ion-input name='fname' (click)="vvv();"  [(ngModel)]="FirstName" [formControl]="profileForm.controls['fname']" type="text"></ion-input>
+    </ion-item>
+    <!-- <ion-label *ngIf="isFieldInvalid('fname')">first name must be entered.</ion-label> -->
+
+    <ion-item id="lastname">
+      <ion-label floating>Last Name</ion-label>
+      <ion-input name='lname' [(ngModel)]="LastName" [formControl]="profileForm.controls['lname']" type="text"></ion-input>
+    </ion-item>
+    <!-- <ion-label *ngIf="isFieldInvalid('lname')">last name must be entered.</ion-label> -->
+    <ion-item id="mobi">
+      <ion-label floating>email id</ion-label>
+      <ion-input name='emid' [(ngModel)]="EmailId" [formControl]="profileForm.controls['emid']" type="Email"></ion-input>
+    </ion-item>
+    <!-- <ion-label *ngIf="isFieldInvalid('emid')">please enter valid email id.</ion-label> -->
+    <br>
+    <button ion-button full color="light" round class="login" style="color: rgb(109, 154, 255);" (click)="UpdateProfile();" [disabled]="!profileForm.valid">update</button>
+
+  </form>
+  </ion-scroll>
+</ion-content>

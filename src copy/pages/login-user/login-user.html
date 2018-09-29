@@ -1,0 +1,45 @@
+
+<ion-content padding="true" class="parent" >
+  
+  <p class="p" style="margin-top: 22%;">log in to your account
+    <br>
+    <a class="and">&</a>check your wealth.
+    <br>
+  </p>
+
+<form [formGroup]="loginForm">
+    <ion-item id="user" >
+      <ion-label floating>
+        <b>login id/ mobile no</b>
+      </ion-label>
+      <ion-input name='loginid' type="text"  [formControl]="loginForm.controls['loginid']"></ion-input>
+      
+    </ion-item>
+    <ion-label *ngIf="isFieldInvalid('loginid')" style="padding-left: 12px;">login id/ mobile no must be entered</ion-label>
+   
+  
+    <ion-item id="user">
+      <ion-label floating>
+        <b>password</b>
+      </ion-label>
+    <ion-input name='upassword' [type]="passwordType" [formControl]="loginForm.controls['upassword']">
+
+    </ion-input>
+    <button ion-button clear item-end (click)='hideShowPassword()' class="eyebtn">
+        <ion-icon [name]="passwordIcon"  style="font-size:200%;"></ion-icon>
+      </button>
+    </ion-item>
+
+    
+    <ion-label *ngIf="isFieldInvalid('upassword')" style="padding-left: 12px;" >password must be entered</ion-label>
+  <!-- <button ion-button block  ></button> -->
+
+      <button ion-button full color="light" round class="login" (click)="loginhandler();" style="color: rgb(109, 154, 255);height:40px;">login</button>
+
+    <div ion-item id="sifor">
+      <button (click)="signup();" class="sss" style="webkit-text-fill-color: white;"><u>sign up</u></button>
+      <button item-end (click)="forG();"  class="sss" style="webkit-text-fill-color: white;"><u>forget password</u></button>
+    </div>
+
+    </form>
+</ion-content>
