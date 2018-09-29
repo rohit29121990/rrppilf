@@ -1,0 +1,59 @@
+page-tabmaster {
+
+.tabs-md .tab-button {
+  min-height: 5.6rem;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0;
+}
+
+
+ion-icon {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  background-size: 18px;
+  &[ng-reflect-name="customicon"] {
+    background-image: url('../assets/imgs/logout.png');
+    &[ng-reflect-is-active="true"] {
+      background-image: url('../assets/imgs/logout.png');
+    }
+  }
+}
+
+.tabs-md .tabbar {
+
+  background: rgba(0, 189, 211, 0.72);
+}
+ion-icon {
+  &[class*="custom-"] {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+    $sz: 20px;
+    width: $sz;
+    height: $sz;
+  } // custom icons
+  &[class*="wallet"] {
+    background: url(../assets/icon/wall.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+  &[class*="history"] {
+    background: url(../assets/icon/transac.png) no-repeat 50% 50%;
+
+    background-size: contain;
+  }
+
+  &[class*="profile"] {
+
+    background: url(../assets/icon/profile.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+
+  &[class*="email"] {
+
+    background: url(../assets/icon/noty.png) no-repeat 50% 50%;
+    background-size: contain;
+  }
+
+ }
+}

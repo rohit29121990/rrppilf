@@ -1,0 +1,223 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary: rgb(0, 0, 0),
+
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #fff8f8,
+  dark: #222,
+  pwhite: #F8F8F8,
+
+  transparents:rgba(240, 160, 60, 0)
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+// @import "roboto";
+// @import "noto-sans";
+
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: Bold;
+  font-weight: 1;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: BoldAlternate;
+  font-weight: 2;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-BoldAlternate.otf');
+
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: BoldItalic;
+  font-weight: 3;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-BoldItalic.otf');
+
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: Light;
+  font-weight: 4;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-Light.otf');
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: LightAlternate;
+  font-weight: 5;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-LightAlternate.otf');
+
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: LightItalic;
+  font-weight: 6;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-LightItalic.otf');
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: Medium;
+  font-weight: 7;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: MediumAlternate;
+  font-weight: 8;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-MediumAlternate.otf');
+
+}
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: MediumItalic;
+  font-weight: 9;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-MediumItalic.otf');
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: Regular;
+  font-weight: 10;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: RegularAlternate;
+  font-weight: 11;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-RegularAlternate.otf');
+}
+
+@font-face {
+  font-family: 'Bryant Pro';
+  font-style: RegularItalic;
+  font-weight: 12;
+  src: url('../assets/fonts/bryantpro-font-family/BryantPro-RegularItalic.otf');
+}
+
+
+
+$font-family-base:"Bryant Pro";
+// body{
+//         font-family: "Bryant Pro" !important;
+//         font-weight: 10 !important;
+// }
+p,input,a{
+  font-family: "Bryant Pro" !important;
+ font-weight: 1 !important;
+
+}
+button {
+  font-family: "Bryant Pro" !important;
+  font-weight: 7 !important;
+  text-decoration-color: rgb(109, 154, 255);
+}
+
+input{
+  font-family: "Bryant Pro" !important;
+ font-weight: 7 !important;
+}
+b {
+  font-family: "Bryant Pro" !important;
+  font-weight: 4 !important;
+}
+header {
+  font-family: "Bryant Pro" !important;
+  font-weight: 1 !important;
+  font-size: 20px;
+}
+
+
+
+title {
+  font-family: "Bryant Pro" !important;
+  font-weight: 1 !important;
+}
+
+ion-app.md{
+  //this will apply on button
+}

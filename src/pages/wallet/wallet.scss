@@ -1,0 +1,127 @@
+page-wallet {
+    #wcard{
+        border-radius: 10%;
+    }
+    #wcardref{
+        height: 26%;
+    }
+
+    #waddcard {
+      margin-top: -25%;
+      margin-left: 74%;
+      background-color: none;
+    }
+    .balance{
+        border: 10%;
+        text-align: center;
+    }
+    #waddcard2 {
+      margin-top: -25%;
+      margin-left: 71%;
+      background-color: none;
+    }
+    .con{
+        background-color: transparent;
+    }
+
+    #amt{
+        .text-input{
+            text-align: center;
+        }
+    }
+    .input-md[clearInput] .text-input {
+      padding-right: 0px;
+    }
+
+    #pos2 {
+    width: 40%;
+    margin-top: -38%;
+    margin-bottom: 20%
+    
+    }
+    #pos3 {
+        border-radius: 10%;
+    .recieve {
+    
+        margin-top: -37%;
+        margin-left: 54%;
+        width: 45%;
+        height: 28%;
+    }}
+    
+    #pos6{
+        text-align: center;
+    }
+    
+    #plusicon {
+    
+        width: 15%;
+        height: 15%;
+    }
+    
+    #arrow{
+        font-size: 3.2em;
+    }
+    
+    ion-card {
+      position: relative;
+      text-align: left;
+    }
+    .card-subtitle {
+        font-size: 2em;
+        position: absolute;
+        top: 40%;
+        left:30%;
+        width: 100%;
+         color: rgb(2, 2, 2);
+      
+      }
+ 
+#amt{
+   font-weight: bold;
+   color: #fff;
+   border: 3px solid #fff;
+   font-weight: bold;
+   text-align: center;
+   vertical-align: middle;
+   .text-input,.text-input-md{
+       padding:5%;
+       font-size: 300%;
+   }
+
+}
+
+     .card-title {
+        /* position: absolute; */
+        font-weight: bold;
+        color: #fff;
+        border: 3px solid #fff;
+        font-size: 200%;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .card-title1 {
+        /* position: absolute; */
+        font-weight: bold;
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 160%;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+    }
+      ion-icon {
+        display: inline-block;
+        font-size: 70px;
+    }
+    .ion-backdrop {
+      background: rgba(34, 224, 34, 0.5);
+    }
+
+    .loading-ios,
+    .loading-wrapper {
+      background: rgba(230, 9, 9, 0);
+    }
+
+}

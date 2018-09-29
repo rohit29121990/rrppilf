@@ -1,0 +1,28 @@
+
+<ion-header no-border>
+  <ion-navbar color="basecolor">
+    <ion-title>Add Vouvher</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding style=" background-color:#F0A03C;">
+    <form [formGroup]="addmoneyForm">
+  <ion-list id="in">
+  <!-- <ion-item> -->
+    <!-- <ion-input [(ngModel)]="vamt" [formControl]="addmoneyForm.controls['amt']" type="text" value="" placeholder="enter voucher" class="box" style="margin-top: 12%;" (ionChange)='Vvelidator();'></ion-input> -->
+  
+  <ion-input [(ngModel)]="vamt" [formControl]="addmoneyForm.controls['amt']" placeholder="voucher code" id="amt" text-center
+    type="text" style="border-radius: 30px;">
+  </ion-input>
+
+  <!-- </ion-item> -->
+
+  <ion-label *ngIf="isFieldInvalid('amt')">Please enter a valid code.</ion-label>
+  <button ion-button full color="light" round class="login" style="color: blue;transition: none;height:50px;font-size: 150%;"
+     (click)="Vaddmoney();" [disabled]="!addmoneyForm.valid">continue</button>
+
+</ion-list>
+</form>
+
+
+
+</ion-content>

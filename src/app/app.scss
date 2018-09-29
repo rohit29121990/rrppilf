@@ -1,0 +1,169 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.scroll-content { padding-bottom: 0!important; }
+
+@font-face {
+    font-family: BryantPro-RegularItalic;
+    src: url(assets/fonts/BryantPro-RegularItalic.otf) format("otf");
+    font-weight: 100
+    }
+.toolbar-background-md {
+    border-color: #00bdd3;
+    background:transparent;
+}
+
+.login {
+  text-transform: none;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.content-md {
+    color: #fff;
+    background-image: linear-gradient(25deg, #6320de 0%,#534fff 34%,#15a1f1 74%, #00bdd3 100%);
+}
+.scroll-content{overflow: hidden;}
+page-home {
+.imgcenter{
+    margin-left: 35%;
+    border-radius: 20%;
+    border-radius: 50%;
+}
+.flipper {
+    margin-left: 35%;
+    font-size: 280%;
+    // margin-top: 2%;
+    font-family: BryantPro-RegularItalic;
+    // margin-bottom: 5%;
+    -webkit-text-fill-color: white;
+}
+.cir{
+    border-radius: 80%;
+    background-color:white;
+}
+.dot {
+    height: 75px;
+    width: 75px;
+    margin-left: 40%;
+    background-color:white;
+    border-radius: 50%;
+    display: inline-block;
+}
+.quote {
+    margin-left: -44%;
+    margin-right: -44%;
+    margin-top: 0%;
+    margin-bottom: 15%;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+        font-size: 180%;
+    -webkit-text-fill-color: wheat;
+
+}
+.sign {
+background-color: wheat;
+margin-top: 5%;
+}
+.half{
+    width: 50%;
+    height: .5%;
+
+    background-color: wheat;
+}
+    
+h2 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid wheat;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+    
+h2 span {
+    background: transparent;
+    padding: 0 10px;
+}
+.or{
+    font-size: 80%;
+        -webkit-text-fill-color: white;
+}
+.a{
+    margin-top: 8%;
+}
+
+}
+
+.item-md {
+    padding-left: 16px;
+    padding-right: 0;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: none;
+    color: #fff;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button-md{
+    color: #222;
+    background-color: #fff;
+}
+button {
+    border: 0;
+    font-family: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    line-height: 1;
+    text-transform: none;
+    cursor: pointer;
+    -webkit-appearance: button;
+    background-color: transparent;
+    color: #fff;
+}
+.toolbar-background-md {
+    border-color: #258cf4;
+    background: #09b2df;
+    color:white;
+}
+.toolbar-title-md {
+    padding: 0 12px;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.item-md p {
+    margin: 0 0 2px;
+    overflow: inherit;
+    font-size: 1.4rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #fff;
+}
+
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #fff;
+    background-color: transparent;
+}
+
+.button {
+    margin-top: 10%;
+    background-color: white;
+    /* -webkit-text-fill-color: #F0A03C; */
+}

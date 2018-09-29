@@ -1,0 +1,29 @@
+page-inputno {
+  #d1,.con {
+    z-index: 9999;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .con {
+    background-color: #F0A03C;
+  }
+  .tabs-md .tab-button[aria-selected=true] .tab-button-icon{
+      color: rgba(60, 60, 60, 0.7);
+
+  }
+.tabs-md,.tab-button{
+
+  color: rgba(60, 60, 60, 0.7);
+
+}
+.content-md {
+  color: #ffa239;
+}
+
+
+
+}
+

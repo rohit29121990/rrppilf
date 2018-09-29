@@ -1,0 +1,28 @@
+<ion-content class="login-content" padding>
+  <ion-row class="logo-row">
+    <ion-col></ion-col>
+    <ion-col width-87>
+      <!-- <img src="assets/imgs/flpr.png" /> -->
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
+  <div class="login-box">
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+          <ion-label style="text-align:center;">enter your mobile number below to get otp</ion-label>
+          <ion-item>
+            <ion-input type="number" placeholder="mobile number/user id" name="mono" required></ion-input>
+          </ion-item>
+          <ion-item>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="signup-col">
+        <button ion-button class="submit-btn" full type="submit" round (click)="getotp();" style="color: rgb(109, 154, 255);">get otp</button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
